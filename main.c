@@ -1,7 +1,7 @@
 #include "lvgl/lvgl.h"
 #include "lv_drivers/sdl/sdl.h"
 
-include <stdio.h>
+#include <stdio.h>
 #include <signal.h>
 #include <time.h>
 #include <unistd.h>

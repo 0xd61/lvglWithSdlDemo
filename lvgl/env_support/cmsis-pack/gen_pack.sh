@@ -21,8 +21,8 @@ if [ `uname -s` = "Linux" ]
   CMSIS_PACK_PATH="/home/$USER/.arm/Packs/ARM/CMSIS/5.7.0/"
   PATH_TO_ADD="$CMSIS_PACK_PATH/CMSIS/Utilities/Linux64/"
 else
-  CMSIS_PACK_PATH="/C/Users/$USER/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0"
-  PATH_TO_ADD="/C/Program Files (x86)/7-Zip/:/C/Program Files/7-Zip/:$CMSIS_PACK_PATH/CMSIS/Utilities/Win32/:/C/xmllint/"
+  CMSIS_PACK_PATH="/C/Users/gabriel/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0"
+  PATH_TO_ADD="/C/Program Files (x86)/7-Zip/:$CMSIS_PACK_PATH/CMSIS/Utilities/Win32/:/C/xmllint/"
 fi
 [[ ":$PATH:" != *":$PATH_TO_ADD}:"* ]] && PATH="${PATH}:${PATH_TO_ADD}"
 echo $PATH_TO_ADD appended to PATH
@@ -46,7 +46,6 @@ PACK_DIRS="
   ../../src
   ../../docs
   ../../demos
-  ../../env_support/pikascript
 "
 
 
@@ -54,6 +53,7 @@ PACK_DIRS="
 PACK_BASE_FILES="
   ../../LICENCE.txt
   ../../README.md
+  ../../README_zh.md
   ../../lvgl.h
   lv_conf_cmsis.h
   lv_cmsis_pack.txt

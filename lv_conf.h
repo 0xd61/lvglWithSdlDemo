@@ -19,7 +19,6 @@
 
 #include <stdint.h>
 
-#define LV_USE_DEV_VERSION
 /*====================
    COLOR SETTINGS
  *====================*/
