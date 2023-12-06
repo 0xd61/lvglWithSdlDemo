@@ -1,15 +1,11 @@
-#include <stdio.h>
+#include "lvgl/lvgl.h"
+#include "lv_drivers/sdl/sdl.h"
+
+include <stdio.h>
 #include <signal.h>
 #include <time.h>
-#ifdef WIN32
-#include <windows.h>
-#define SLEEP(s) Sleep((DWORD)s)
-#else
 #include <unistd.h>
 #define SLEEP(s) usleep(s * 1000)
-#endif
-#include "lvgl.h"
-#include "sdl/sdl.h"
 
 static int demo_status;
 

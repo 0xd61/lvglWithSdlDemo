@@ -91,7 +91,7 @@
 
 /* Hardware accelerated SDL driver */
 #ifndef USE_SDL_GPU
-# define USE_SDL_GPU 0
+# define USE_SDL_GPU 1
 #endif
 
 #if USE_SDL || USE_SDL_GPU
@@ -103,11 +103,11 @@
 
 /* Used to test true double buffering with only address changing.
  * Use 2 draw buffers, bith with SDL_HOR_RES x SDL_VER_RES size*/
-#  define SDL_DOUBLE_BUFFERED 0
+#  define SDL_DOUBLE_BUFFERED 1
 
 /*Eclipse: <SDL2/SDL.h>    Visual Studio: <SDL.h>*/
-//#  define SDL_INCLUDE_PATH    <SDL2/SDL.h>
-#  define SDL_INCLUDE_PATH    <SDL.h>
+#  define SDL_INCLUDE_PATH    <SDL2/SDL.h>
+//#  define SDL_INCLUDE_PATH    <SDL.h>
 
 /*Open two windows to test multi display support*/
 #  define SDL_DUAL_DISPLAY            0
